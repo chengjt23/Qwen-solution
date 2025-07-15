@@ -75,6 +75,6 @@ def check_single(data_path):
     return result
 
 if __name__ == "__main__":
-    data_path = "C:/Users/Administrator/Desktop/test.json"
+    data_path = "/gpfs-flash/hulab/public_datasets/audio_datasets/UAS_Benchmark/other_dataset/Qwen-solution/data/test_data.json"
     result = check_single(data_path)
     print(result)
