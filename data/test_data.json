@@ -1,0 +1,79 @@
+[
+    {
+        "text_label": [
+            "Speech"
+        ],
+        "audio_path": "/gpfs-flash/hulab/public_datasets/audio_datasets/AudioSet/audioset_data/audio/unbal_train/ZNsOZvEmhQc.flac",
+        "captions": []
+    },
+    {
+        "text_label": [
+            "Clatter"
+        ],
+        "audio_path": "/gpfs-flash/hulab/public_datasets/audio_datasets/AudioSet/audioset_data/audio/unbal_train/ZNtiwRZ1GKU.flac",
+        "captions": []
+    },
+    {
+        "text_label": [
+            "Sheep"
+        ],
+        "audio_path": "/gpfs-flash/hulab/public_datasets/audio_datasets/AudioSet/audioset_data/audio/unbal_train/ZNvPJkdXoUo.flac",
+        "captions": []
+    },
+    {
+        "text_label": [
+            "Speech"
+        ],
+        "audio_path": "/gpfs-flash/hulab/public_datasets/audio_datasets/AudioSet/audioset_data/audio/unbal_train/ZNxJ-3b-_Xg.flac",
+        "captions": []
+    },
+    {
+        "text_label": [
+            "Speech"
+        ],
+        "audio_path": "/gpfs-flash/hulab/public_datasets/audio_datasets/AudioSet/audioset_data/audio/unbal_train/ZO-CGN78gdY.flac",
+        "captions": []
+    },
+    {
+        "text_label": [
+            "Speech"
+        ],
+        "audio_path": "/gpfs-flash/hulab/public_datasets/audio_datasets/AudioSet/audioset_data/audio/unbal_train/ZO4v1qj3PBI.flac",
+        "captions": []
+    },
+    {
+        "text_label": [
+            "Speech"
+        ],
+        "audio_path": "/gpfs-flash/hulab/public_datasets/audio_datasets/AudioSet/audioset_data/audio/unbal_train/ZO7DESzOSDQ.flac",
+        "captions": []
+    },
+    {
+        "text_label": [
+            "Speech"
+        ],
+        "audio_path": "/gpfs-flash/hulab/public_datasets/audio_datasets/AudioSet/audioset_data/audio/unbal_train/ZO7MIMOHjaQ.flac",
+        "captions": []
+    },
+    {
+        "text_label": [
+            "Speech"
+        ],
+        "audio_path": "/gpfs-flash/hulab/public_datasets/audio_datasets/AudioSet/audioset_data/audio/unbal_train/ZO7XnxGSu3c.flac",
+        "captions": []
+    },
+    {
+        "text_label": [
+            "Speech"
+        ],
+        "audio_path": "/gpfs-flash/hulab/public_datasets/audio_datasets/AudioSet/audioset_data/audio/unbal_train/ZO90g-Jh6L0.flac",
+        "captions": []
+    },
+    {
+        "text_label": [
+            "Speech"
+        ],
+        "audio_path": "/gpfs-flash/hulab/public_datasets/audio_datasets/AudioSet/audioset_data/audio/unbal_train/ZOA9cfGLFrg.flac",
+        "captions": []
+    }
+]
