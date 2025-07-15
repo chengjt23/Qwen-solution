@@ -15,7 +15,7 @@ def encode_audio(audio_path):
     with open(audio_path, "rb") as audio_file:
         return base64.b64encode(audio_file.read()).decode("utf-8")
 
-audio_path = "C:/Users/Administrator/Desktop/test.wav"
+audio_path = "/gpfs-flash/hulab/public_datasets/audio_datasets/AudioSet/audioset_data/audio/unbal_train/ZNvPJkdXoUo.flac"
 audio_data = encode_audio(audio_path)
 
 
@@ -29,10 +29,10 @@ completion = client.chat.completions.create(
                     "type": "input_audio",
                     "input_audio": {
                         "data": f"data:;base64,{audio_data}",
-                        "format": "wav",
+                        "format": "flac",
                     },
                 },
-                {"type": "text", "text": "请分析这段音频，判断其中是否只包含单一音源或单一音频事件。如果音频中只有一种声音（例如只有狗叫声、只有人说话声或只有单一乐器演奏等），则判断为'单源音频'；如果音频中同时包含多种不同的声音（例如同时有猫叫声和音乐声、人说话和汽车噪音等混合在一起），则判断为'多源音频'。请详细说明你的判断理由，并列出你在音频中识别到的所有声音类型。"},
+                {"type": "text", "text": "请分析这段音频，判断其中是否只包含一种类型的声音。请只返回True或者False，True表示该音频只包含一种类型的声音，False表示该音频包含多种类别的声音。下面是你的回复："},
             ],
         },
     ],
@@ -44,8 +44,22 @@ completion = client.chat.completions.create(
     stream_options={"include_usage": True},
 )
 
+# 收集完整的响应内容
+full_response = ""
+usage_info = None
+
 for chunk in completion:
     if chunk.choices:
-        print(chunk.choices[0].delta)
+        if chunk.choices[0].delta.content is not None:
+            full_response += chunk.choices[0].delta.content
     else:
-        print(chunk.usage)
+        usage_info = chunk.usage
+
+# 打印完整响应
+print("\n===== 完整响应 =====")
+print(full_response)
+
+# 打印使用情况信息
+if usage_info:
+    print("\n===== 使用情况 =====")
+    print(usage_info)
